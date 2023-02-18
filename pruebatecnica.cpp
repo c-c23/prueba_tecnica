@@ -29,7 +29,7 @@ int main() {
 	    
 	}while(calificacion<0 || calificacion>100 );
     
-    if(calificacion%5==0)
+    if(calificacion%5==0 && calificacion>40)
     {
     	cout<<" \nla calificacion del estudiante "<<nombre<<" es "<<calificacion;
 	}
@@ -77,3 +77,23 @@ else {
 	
 	return 0;
 }
+/*
+Explicacion de la solucion:
+
+1)
+para empezar el rango de nota era de 0 a 100 por lo tanto 
+utilice un ciclo do-while para que cuanto ingresara la calificacion
+esta estuviera en el rango correspondiente.
+2)
+Luego utilice una sentencia if como el primer condicional del programa y en esta
+la condicion es que si la calificacion al dividirla por 5 el residuo es cero; quiere
+decir que es multiplo de 5 por lo tanto su nota se mantiene igual
+
+3)
+En el siguiente condicional utilizo nuevamente la sentencia do-while para contar
+el numero al multiplo de 5 mas cercano
+
+4)
+El ultimo condicional lo utilizo para saber si el numero que halle en el paso anterios es menor 
+o mayor que 3 para poder establecer la nota correspondiente.*/
+
